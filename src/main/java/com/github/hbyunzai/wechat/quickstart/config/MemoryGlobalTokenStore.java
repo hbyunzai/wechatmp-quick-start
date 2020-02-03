@@ -3,18 +3,17 @@
  * @Author: ferried
  * @Email: harlancui@outlook.com
  * @LastEditors  : ferried
- * @LastEditTime : 2020-02-03 13:30:48
+ * @LastEditTime : 2020-02-03 15:15:35
  * @Editor: Visual Studio Code
  * @Desc: nil
  * @License: nil
  */
 package com.github.hbyunzai.wechat.quickstart.config;
-import org.springframework.context.annotation.Configuration;
 
 import lombok.Data;
 
-@Configuration
 @Data
-public class GlobalBean{
-    String WECHAT_GLOBAL_TOKEN;
+public class MemoryGlobalTokenStore{
+    String wechat_global_token;
+    String wechat_js_ticket;
 }

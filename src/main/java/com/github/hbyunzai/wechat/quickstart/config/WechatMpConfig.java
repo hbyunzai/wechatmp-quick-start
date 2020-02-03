@@ -3,7 +3,7 @@
  * @Author: ferried
  * @Email: harlancui@outlook.com
  * @LastEditors  : ferried
- * @LastEditTime : 2020-02-03 13:10:01
+ * @LastEditTime : 2020-02-03 13:35:25
  * @Editor: Visual Studio Code
  * @Desc: nil
  * @License: nil
@@ -22,6 +22,11 @@ public class WechatMpConfig {
 
     @Autowired
     WechatConfig config;
+
+    @Bean
+    MemoryGlobalTokenStore generateStore() {
+        return new MemoryGlobalTokenStore();
+    }
 
     @Bean
     public WxMpService generateWxMpService() {

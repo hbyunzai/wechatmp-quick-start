@@ -1,0 +1,7 @@
+server:
+  port: 80
+wechat:
+  appid: wxa3f81490072de0a0
+  appsecret: a04006c6f28a47e9b060ab3c3da0f9e4
+  token: d2a2bb785aa75dd78b048a20861d9815
+  aeskey: 0
